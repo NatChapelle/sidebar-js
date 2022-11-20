@@ -1,5 +1,7 @@
 const btn = document.getElementById("btn");
 const sideBar = document.getElementById("side-bar");
+const content = document.querySelector(".content");
+
 let isVisible = false; //<--for boolean version only
 // console.log(isVisible);
 
@@ -12,7 +14,12 @@ btn.addEventListener("click", () => {
 isVisible =!isVisible;
 // console.log(isVisible);
 isVisible ? sideBar.classList.add("is-visible"): sideBar.classList.remove("is-visible");
+
 });
+
+content.addEventListener("click", () => {
+sideBar.classList.remove("is-visible");
+})
 
 
 
