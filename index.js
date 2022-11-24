@@ -5,24 +5,25 @@ const content = document.querySelector(".content");
 let isVisible = false; //<--for boolean version only
 // console.log(isVisible);
 
+//boolean method
 // btn.addEventListener("click", () => {
-    // sideBar.classList.toggle("is-visible");
+    // isVisible =!isVisible;
+    // console.log(isVisible);
+    // isVisible ? sideBar.classList.add("is-visible"): sideBar.classList.remove("is-visible");
+    // btn.classList.toggle("openmenu");
+    
+    
 // });
 
-//boolean method
-btn.addEventListener("click", () => {
-isVisible =!isVisible;
-// console.log(isVisible);
-isVisible ? sideBar.classList.add("is-visible"): sideBar.classList.remove("is-visible");
-btn.classList.toggle("openmenu");
-
-
-});
-
 content.addEventListener("click", () => {
-sideBar.classList.remove("is-visible");
+    sideBar.classList.remove("is-visible");
 })
 
+btn.addEventListener("click", () => {
+    sideBar.classList.toggle("is-visible");
+   
+    btn.classList.toggle("openmenu");
+});
 
 
 
