@@ -14,12 +14,15 @@ btn.addEventListener("click", () => {
 isVisible =!isVisible;
 // console.log(isVisible);
 isVisible ? sideBar.classList.add("is-visible"): sideBar.classList.remove("is-visible");
+btn.classList.toggle("openmenu");
+
 
 });
 
 content.addEventListener("click", () => {
 sideBar.classList.remove("is-visible");
 })
+
 
 
 

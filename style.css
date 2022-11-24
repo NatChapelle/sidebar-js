@@ -51,6 +51,19 @@ p {
   margin-top: 4px;
   transition: 0.3s ease;
 }
+
+.openmenu .line-1 {
+  
+  transform: translateY(137%) rotate(-45deg);
+
+}
+.openmenu .line-3 {
+  transform: translateY(-137%) rotate(45deg);
+
+}
+.openmenu .line-2 {
+  width: 0;
+}
 li {
   color: #292929;
   list-style: none;
